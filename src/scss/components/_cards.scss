@@ -1,1 +1,17 @@
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
 
+    &__title {
+        font-family: $font-title;
+        font-size: rem(18);
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $font-text;
+        font-size: rem(18);
+        text-align: center;
+    }
+}
