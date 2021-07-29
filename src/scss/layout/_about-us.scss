@@ -1,0 +1,70 @@
+.about-us {
+    height: rem(376);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+    &__tips {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-grow: 16;
+        height: rem(30);
+        font-family: $font-text;
+        font-size: rem(14);
+        color: $color-lightblue;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 16;
+        height: rem(60);
+        font-family: $font-title;
+        font-size: rem(24);
+        font-weight: 700;
+        color: $color-text;
+        line-height: rem(30);
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 32;
+        height: rem(120);
+        font-family: $font-text;
+        font-size: rem(18);
+        font-weight: 400;
+        color: $color-text-2;
+        line-height: rem(30);
+
+    }
+    &__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-grow: 36;
+        
+        &--box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: rem(76);
+            height: rem(45);
+            font-family: $font-text;
+            font-size: rem(20);
+            font-weight: 500;
+            color: $color-orange;
+            border: solid 2px $color-orange ;
+            border-radius: rem(22.5);
+            
+        }
+
+        &--link {
+            text-decoration: none;
+            color: $color-orange;
+        }
+    }
+}

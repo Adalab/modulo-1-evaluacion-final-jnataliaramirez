@@ -42,13 +42,11 @@
         justify-content:flex-end;
         height: 100vh;
         color: $color-white;
-        
-        
+                
         &--title {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            flex-basis: 110;
             flex-grow: 7;
             height: rem(110);
             font-size: rem(42);
@@ -56,7 +54,7 @@
             text-align: center;
             line-height: 1.31;
             font-family: $font-title;
-
+            text-transform: uppercase;
         }
         &--text {
             display: flex;
