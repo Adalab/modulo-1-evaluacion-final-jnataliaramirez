@@ -1,0 +1,35 @@
+//Central column
+.page-wrapper {
+    margin: 0 15px;
+    // background-color: pink;
+  
+    @include tablet {
+      margin: 0 45px;
+    }
+  
+    @include desktop {
+      margin: 0 auto;
+      max-width: 1120px;
+    }
+}
+
+.button-circle {
+  width: rem(45) ;
+  height: rem(45);
+  background-color: $color-white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: rem(12);
+  
+  .button-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-icon {
+    width: rem(20);
+    height: rem(20);
+  }
+}
