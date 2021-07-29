@@ -14,14 +14,14 @@
 }
 
 .button-circle {
-  width: rem(45) ;
-  height: rem(45);
-  background-color: $color-white;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-content: center;
+  width: rem(45) ;
+  height: rem(45);
   padding: rem(12);
+  background-color: $color-white;
+  border-radius: 50%;
   
   .button-link {
     display: flex;

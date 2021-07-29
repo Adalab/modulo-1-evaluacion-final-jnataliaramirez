@@ -19,28 +19,28 @@
     }
 
     &__menu {
-        position: fixed;
-        top: 0;
+        display: flex;
         width: rem(44);
         height: rem(44);
-        background-color: $color-menu;
-        display: flex;
+        position: fixed;
+        top: 0;
         justify-content: center;
         align-items: center;
+        background-color: $color-menu;
 
         &--link {
+            display: flex;
             width: rem(16);
             height: rem(14);
-            display: flex;
             align-items: center;
         }
     }
 
     &__container {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content:flex-end;
+        height: 100vh;
         color: $color-white;
         
         
@@ -50,30 +50,31 @@
             justify-content: flex-end;
             flex-basis: 110;
             flex-grow: 7;
-            font-family: $font-title;
+            height: rem(110);
             font-size: rem(42);
             font-weight: bold;
             text-align: center;
             line-height: 1.31;
+            font-family: $font-title;
 
         }
         &--text {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            flex-basis: 21;
             flex-grow: 0.5;
+            height: rem(21);
+            font-family: $font-text;
             font-size: rem(16);
             text-align: center;
-            font-family: $font-text;
  
         }
         &--button {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-basis: 45;
             flex-grow: 2.5;
+            height: rem(45);
         } 
     }
 }
