@@ -1,26 +1,30 @@
 .reasons {
     display: grid;
-    grid-template-rows: repeat(5, auto);
-    justify-content:flex-start ;
+    grid-template-rows: rem(105) repeat(3, rem(123)) rem(150);
+    justify-content:center;
+    align-content: center;
     height: rem(624);
     
-    // background-color: $color-background;
-    background-color: skyblue;
+    background-color: $color-background;
+    // background-color: skyblue;
     
     &__title {
+        display: grid;
+        align-content: flex-end;
+        height: rem(60);
         font-family: $font-title;
         font-size: rem(24);
         text-align: center;
+        text-transform: capitalize;
     }
 
     &__button {
-        display        : flex;
-        flex-direction : column;
-        justify-content: flex-start;
-        align-items    : flex-start;
-        flex-grow      : 36;
+        display        : grid;
+        justify-content: center;
+        align-items    : center;
+        height: rem(110); /*Acomodarlo a un centro parecido del layout*/
         &--box {
-            display        : flex;
+            display        : grid;
             justify-content: center;
             align-items    : center;
             width          : rem(184);
