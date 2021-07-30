@@ -1,79 +1,79 @@
 .footer {
-  display         : flex;
-  flex-direction  : column;
-  position        : relative;
-  height          : rem(465);
-  background-color: $color-footer;
-  font-family     : $font-text;
+    display         : flex;
+    flex-direction  : column;
+    position        : relative;
+    height          : rem(465);
+    background-color: $color-footer;
+    font-family     : $font-text;
 
-  &__button {
-    position : absolute;
-    top      : rem(-22.5);
-    left     : 50%;
-    transform: translateX(-50%);
-  }
-
-  &__nav-sections {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-end;
-    flex-grow      : 13;
-
-    &--box {
-      display        : flex;
-      flex-direction : column;
-      justify-content: space-evenly;
-      align-items    : center;
-      height         : rem(150);
+    &__button {
+        position : absolute;
+        top      : rem(-22.5);
+        left     : 50%;
+        transform: translateX(-50%);
     }
 
-    &--item {
-      color          : $color-white;
-      text-decoration: none;
-      text-transform : uppercase;
-      text-align     : center;
-    }
-  }
+    &__nav-sections {
+        display        : flex;
+        flex-direction : column;
+        justify-content: flex-end;
+        flex-grow      : 13;
 
-  &__nav-rrss {
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-end;
-    flex-grow      : 6;
+        &--box {
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-evenly;
+            align-items    : center;
+            height         : rem(150);
+        }
 
-    &--box {
-      display        : flex;
-      flex-direction : column;
-      justify-content: space-evenly;
-      align-items    : center;
-      height         : rem(90);
-    }
-
-    &--item {
-      color          : $color-white;
-      text-decoration: none;
-      text-transform : uppercase;
-      text-align     : center;
-    }
-  }
-
-  &__copy {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    align-items    : center;
-    flex-grow      : 16;
-
-    &--text {
-      height     : rem(30);
-      font-size  : 14px;
-      line-height: 2.14;
-      color      : $color-white;
+        &--item {
+            color          : $color-white;
+            text-decoration: none;
+            text-transform : uppercase;
+            text-align     : center;
+        }
     }
 
-    &--heart {
-      font-size: 14px;
-      color    : $color-orange;
+    &__nav-rrss {
+        display        : flex;
+        flex-direction : column;
+        justify-content: flex-end;
+        flex-grow      : 6;
+
+        &--box {
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-evenly;
+            align-items    : center;
+            height         : rem(90);
+        }
+
+        &--item {
+            color          : $color-white;
+            text-decoration: none;
+            text-transform : uppercase;
+            text-align     : center;
+        }
     }
-  }
+
+    &__copy {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        flex-grow      : 16;
+
+        &--text {
+            height     : rem(30);
+            font-size  : 14px;
+            line-height: 2.14;
+            color      : $color-white;
+        }
+
+        &--heart {
+            font-size: 14px;
+            color    : $color-orange;
+        }
+    }
 }
