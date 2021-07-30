@@ -6,6 +6,13 @@
     grid-template-rows   : rem(30) rem(63);
     height               : rem(123);
 
+    @include tablet {
+        grid-template-columns: rem(212.3);
+        grid-template-rows: rem(30) rem(68) ;
+        grid-gap: rem(14);
+    }
+    
+
     &__title {
         justify-self: center;
         align-self  : flex-end;
@@ -14,6 +21,13 @@
         font-size   : rem(18);
         text-align  : center;
         grid-column : 2 / 3;
+        
+        @include tablet {
+            grid-column: 1 / 2;
+            line-height: 1.25;
+            font-size   : rem(24);
+
+        }
     }
 
     &__text {
@@ -26,5 +40,11 @@
         font-size      : rem(18);
         text-align     : center;
         line-height    : rem(30);
+
+        @include tablet {
+            grid-column: 1 / 2;
+            font-size: rem(20);
+
+        }
     }
 }

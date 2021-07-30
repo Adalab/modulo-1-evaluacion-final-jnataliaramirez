@@ -1,3 +1,7 @@
+.reasons__section {
+    background-color  : $color-background;
+}
+
 .reasons {
     display           : grid;
     grid-template-rows: rem(105) repeat(3, rem(123)) rem(150);
@@ -5,6 +9,16 @@
     align-content     : center;
     height            : rem(624);
     background-color  : $color-background;
+    
+    @include tablet {
+
+        height: rem(397);
+        grid-template-columns: repeat (3, rem(690));
+        grid-template-rows: rem(120) rem(112) rem(165);
+        column-gap: rem(27.7);
+
+
+    }
 
     &__title {
         display       : grid;
@@ -14,6 +28,14 @@
         text-align    : center;
         text-transform: capitalize;
         font-family   : $font-title;
+        
+        @include tablet {
+            grid-column: 1 / span 3;
+            align-content: center;
+            height        : rem(120);
+            font-size     : rem(26);
+
+        }
     }
 
     &__button {
@@ -21,8 +43,14 @@
         justify-content: center;
         align-items    : center;
         height         : rem(105);
+        
+        @include tablet {
+            grid-column: 2 / span 1;
+            height         : rem(165);
 
-        /*Acomodarlo a un centro parecido del layout*/
+
+        }
+        
         &--box {
             display         : grid;
             justify-content : center;
@@ -31,12 +59,16 @@
             height          : rem(45);
             border-radius   : rem(22.5);
             background-color: $color-orange;
+            
+            @include tablet {
+                width           : rem(210);
 
+            }
         }
 
         &--link {
             text-decoration: none;
-            font-weight    : 400;
+            font-weight    : 500;
             font-size      : rem(20);
             font-family    : $font-text;
             color          : $color-background;
