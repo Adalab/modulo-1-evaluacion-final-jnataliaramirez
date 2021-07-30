@@ -1,0 +1,41 @@
+.footer {
+    // background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: rem(465);
+    background-color: lightgreen;
+
+
+    &__button {
+        position:absolute;
+        top: rem(-22.5);
+        // right: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    &__nav-sections {
+        display        : flex;
+        flex-direction : column;
+        justify-content: flex-end;
+        flex-grow: 45;
+        
+    }
+    &__nav-rrss {
+        display        : flex;
+        flex-direction : column;
+        justify-content: flex-end;
+        flex-grow: 26;
+        
+    }
+    &__copy {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        flex-grow: 29;
+
+    }
+    
+
+}
