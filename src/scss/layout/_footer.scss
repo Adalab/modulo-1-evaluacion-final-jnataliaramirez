@@ -1,11 +1,9 @@
 .footer {
-    // background-color: $color-footer;
     display: flex;
     flex-direction: column;
     position: relative;
     height: rem(465);
-    background-color: lightgreen;
-
+    background-color: $color-footer;
 
     &__button {
         position:absolute;
@@ -21,6 +19,20 @@
         justify-content: flex-end;
         flex-grow: 45;
         
+        &--box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: rem(150);
+        }
+
+        &--item {
+            color          : $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+        }
     }
     &__nav-rrss {
         display        : flex;
@@ -28,12 +40,29 @@
         justify-content: flex-end;
         flex-grow: 26;
         
+        &--box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: rem(90);
+        }
+
+        &--item {
+            color          : $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+        }
     }
     &__copy {
         display        : flex;
         flex-direction : column;
         justify-content: center;
         flex-grow: 29;
+        color          : $color-white;
+
+
 
     }
     
