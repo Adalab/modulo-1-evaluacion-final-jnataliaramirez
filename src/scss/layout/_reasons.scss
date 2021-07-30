@@ -1,36 +1,39 @@
 .reasons {
-    display: grid;
+    display           : grid;
     grid-template-rows: rem(105) repeat(3, rem(123)) rem(150);
-    justify-content:center;
-    align-content: center;
-    height: rem(624);
-    background-color: $color-background;
-    
+    justify-content   : center;
+    align-content     : center;
+    height            : rem(624);
+    background-color  : $color-background;
+
     &__title {
-        display: grid;
-        align-content: flex-end;
-        height: rem(60);
-        font-size: rem(24);
-        text-align: center;
+        display       : grid;
+        align-content : flex-end;
+        height        : rem(60);
+        font-size     : rem(24);
+        text-align    : center;
         text-transform: capitalize;
-        font-family: $font-title;
+        font-family   : $font-title;
     }
 
     &__button {
         display        : grid;
         justify-content: center;
         align-items    : center;
-        height: rem(105); /*Acomodarlo a un centro parecido del layout*/
+        height         : rem(105);
+
+        /*Acomodarlo a un centro parecido del layout*/
         &--box {
-            display        : grid;
-            justify-content: center;
-            align-items    : center;
-            width          : rem(184);
-            height         : rem(45);
-            border-radius  : rem(22.5);
+            display         : grid;
+            justify-content : center;
+            align-items     : center;
+            width           : rem(184);
+            height          : rem(45);
+            border-radius   : rem(22.5);
             background-color: $color-orange;
-            
+
         }
+
         &--link {
             text-decoration: none;
             font-weight    : 400;

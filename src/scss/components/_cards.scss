@@ -1,30 +1,30 @@
 .card {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display              : grid;
+    justify-content      : center;
+    align-items          : center;
     grid-template-columns: rem(55) rem(180) rem(55);
-    grid-template-rows: rem(30) rem(63);
-    height: rem(123);
+    grid-template-rows   : rem(30) rem(63);
+    height               : rem(123);
 
     &__title {
         justify-self: center;
-        align-self: flex-end;
-        height: rem(30);
-        font-family: $font-title;
-        font-size: rem(18);
-        text-align: center;
-        grid-column: 2 / 3;
+        align-self  : flex-end;
+        height      : rem(30);
+        font-family : $font-title;
+        font-size   : rem(18);
+        text-align  : center;
+        grid-column : 2 / 3;
     }
-    
+
     &__text {
-        display: grid;
+        display        : grid;
         justify-content: center;
-        align-items: flex-start;
-        grid-column: 2 / 3;
-        height: rem(63);
-        font-family: $font-text;
-        font-size: rem(18);
-        text-align: center;
-        line-height: rem(30);
+        align-items    : flex-start;
+        grid-column    : 2 / 3;
+        height         : rem(63);
+        font-family    : $font-text;
+        font-size      : rem(18);
+        text-align     : center;
+        line-height    : rem(30);
     }
 }
