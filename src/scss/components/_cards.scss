@@ -8,10 +8,10 @@
 
     @include tablet {
         grid-template-columns: rem(212.3);
-        grid-template-rows: rem(30) rem(68) ;
-        grid-gap: rem(14);
+        grid-template-rows   : rem(30) rem(68);
+        grid-gap             : rem(14);
     }
-    
+
 
     &__title {
         justify-self: center;
@@ -21,12 +21,11 @@
         font-size   : rem(18);
         text-align  : center;
         grid-column : 2 / 3;
-        
+
         @include tablet {
             grid-column: 1 / 2;
             line-height: 1.25;
-            font-size   : rem(24);
-
+            font-size  : rem(24);
         }
     }
 
@@ -43,7 +42,7 @@
 
         @include tablet {
             grid-column: 1 / 2;
-            font-size: rem(20);
+            font-size  : rem(20);
 
         }
     }

@@ -1,3 +1,7 @@
+.footer__section {
+    background-color: $color-footer;
+}
+
 .footer {
     display         : flex;
     flex-direction  : column;
@@ -5,6 +9,13 @@
     height          : rem(465);
     background-color: $color-footer;
     font-family     : $font-text;
+
+    @include tablet {
+        flex-direction: row;
+        height        : rem(240);
+        min-width     : rem(720);
+        padding-top   : rem(45);
+    }
 
     &__button {
         position : absolute;
@@ -19,12 +30,23 @@
         justify-content: flex-end;
         flex-grow      : 13;
 
+        @include tablet {
+            justify-content: flex-start;
+            align-items    : flex-start;
+            flex-grow      : 4;
+        }
+
         &--box {
             display        : flex;
             flex-direction : column;
             justify-content: space-evenly;
             align-items    : center;
             height         : rem(150);
+
+            @include tablet {
+                align-items: flex-start;
+                min-width  : rem(210);
+            }
         }
 
         &--item {
@@ -32,6 +54,10 @@
             text-decoration: none;
             text-transform : uppercase;
             text-align     : center;
+
+            @include tablet {
+                text-align: start;
+            }
         }
     }
 
@@ -41,12 +67,23 @@
         justify-content: flex-end;
         flex-grow      : 6;
 
+        @include tablet {
+            justify-content: flex-start;
+            flex-grow      : 4;
+        }
+
         &--box {
             display        : flex;
             flex-direction : column;
             justify-content: space-evenly;
             align-items    : center;
             height         : rem(90);
+
+            @include tablet {
+                justify-content: space-evenly;
+                align-items    : flex-start;
+                min-width      : rem(210);
+            }
         }
 
         &--item {
@@ -64,11 +101,22 @@
         align-items    : center;
         flex-grow      : 16;
 
+        @include tablet {
+            justify-content: flex-start;
+            align-items    : flex-start;
+            flex-grow      : 4;
+            order          : -1;
+        }
+
         &--text {
             height     : rem(30);
             font-size  : 14px;
             line-height: 2.14;
             color      : $color-white;
+
+            @include tablet {
+                min-width: rem(210);
+            }
         }
 
         &--heart {
