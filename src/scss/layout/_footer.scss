@@ -18,11 +18,24 @@
         padding-top   : rem(45);
     }
 
+    @include desktop {
+    }
+
     &__button {
         position : absolute;
         top      : rem(-22.5);
         left     : 50%;
         transform: translateX(-50%);
+        animation-name: grow;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        
+
+        @include desktop {
+            left     : 40%;
+        }
     }
 
     &__nav-sections {

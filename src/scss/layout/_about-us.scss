@@ -27,7 +27,7 @@
         }
 
         @include desktop {
-            flex-grow: 25;
+            flex-grow  : 25;
             font-size  : rem(16);
             line-height: 1.88;
         }
@@ -54,8 +54,8 @@
         }
 
         @include desktop {
-            flex-grow: 21;
-            font-size: rem(32);
+            flex-grow  : 21;
+            font-size  : rem(32);
             line-height: 1.41;
         }
     }
@@ -98,6 +98,8 @@
             flex-grow: 29;
         }
 
+
+
         &--box {
             display        : flex;
             justify-content: center;
@@ -115,14 +117,32 @@
                 width: rem(91);
             }
 
-            @include desktop { 
+            @include desktop {
                 width: rem(160);
+            }
+
+            &:hover {
+                border          : solid 2px $color-white;
+                background-color: $color-orange;
             }
         }
 
         &--link {
             text-decoration: none;
             color          : $color-orange;
+            padding        : rem(10) rem(20);
+
+            &:hover {
+                color: $color-white;
+            }
+
+            @include tablet {
+                padding: rem(15) rem(30);
+            }
+
+            @include desktop {
+                padding: rem(15) rem(46);
+            }
         }
     }
 }
