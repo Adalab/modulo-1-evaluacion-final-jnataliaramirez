@@ -12,6 +12,10 @@
         grid-gap             : rem(14);
     }
 
+    @include desktop {
+        grid-template-columns: rem(353.8);
+    }
+
 
     &__title {
         justify-self: center;
@@ -43,7 +47,10 @@
         @include tablet {
             grid-column: 1 / 2;
             font-size  : rem(20);
+        }
 
+        @include desktop {
+            padding: 0 rem(1);
         }
     }
 }

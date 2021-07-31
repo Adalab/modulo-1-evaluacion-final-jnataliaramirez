@@ -18,3 +18,16 @@
     margin: 0 275px;
   }
 }
+
+.page-wrapper-reasons {
+  @include desktop {
+    margin: 0 85px;
+    max-width: 1110px;
+  }
+}
+
+.page-wrapper-footer {
+  @include desktop {
+    margin: 0 370px;
+  }
+}

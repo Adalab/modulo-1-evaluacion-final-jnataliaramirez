@@ -11,10 +11,17 @@
     background-color  : $color-background;
 
     @include tablet {
-        grid-template-columns: repeat (3, rem(690));
+        grid-template-columns: repeat (3, rem(212.3));
         grid-template-rows   : rem(120) rem(112) rem(165);
         column-gap           : rem(27.7);
         height               : rem(397);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat (3 rem(353.8));
+        grid-template-rows   : rem(150) rem(112) rem(165);
+        column-gap           : rem(26.2);
+        height               : rem(427);
     }
 
     &__title {
@@ -31,7 +38,11 @@
             align-content: center;
             height       : rem(120);
             font-size    : rem(26);
+        }
 
+        @include desktop {
+            // height       : rem(120);
+            font-size    : rem(32);
         }
     }
 
@@ -59,7 +70,10 @@
 
             @include tablet {
                 width: rem(210);
-
+            }
+            
+            @include desktop {
+                width: rem(255);
             }
         }
 
