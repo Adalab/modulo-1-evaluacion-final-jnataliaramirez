@@ -1,33 +1,23 @@
 //Central column
 .page-wrapper {
-  margin             : 0 15px;
-  // background-color: pink;
+  margin: 0 rem(15);
 
   @include tablet {
-    margin: 0 39px;
-  }
-
-  @include desktop {
-    margin   : 0 auto;
-    max-width: 1120px;
+    margin: 0 rem(39);
   }
 }
 
 .page-wrapper-desktop {
   @include desktop {
-    margin: 0 275px;
-  }
-}
-
-.page-wrapper-reasons {
-  @include desktop {
-    margin: 0 85px;
-    max-width: 1110px;
+    margin: 0 auto;
+    max-width: rem(730);
   }
 }
 
 .page-wrapper-footer {
   @include desktop {
-    margin: 0 370px;
+    margin: 0 auto;
+    max-width: rem(540);
+
   }
 }
