@@ -12,3 +12,9 @@
     max-width: 1120px;
   }
 }
+
+.page-wrapper-desktop {
+  @include desktop {
+    margin: 0 275px;
+  }
+}
