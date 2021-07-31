@@ -9,10 +9,9 @@
         @include tablet {
             background-size    : 100% 100vh;
             background-position: cover;
-            background-repeat: no-repeat;
-
+            background-repeat  : no-repeat;
         }
-        
+
         @include desktop {
             background-size: 100% 100%;
         }
@@ -55,18 +54,17 @@
             line-height    : 1.31;
             font-family    : $font-title;
             text-transform : uppercase;
-
+            
             @include tablet {
-                height     : rem(212);
-                font-size  : rem(80);
-                line-height: 1.33;
-                word-spacing:  100vw;
+                height      : rem(212);
+                font-size   : rem(80);
+                word-spacing: 100vw;
             }
             
             @include desktop {
-                height     : rem(264);
-                font-size  : rem(100);
-
+                height   : rem(264);
+                font-size: rem(100);
+                flex-grow      : 84;
             }
 
         }
@@ -85,14 +83,22 @@
                 height   : rem(32);
                 font-size: rem(24);
             }
-        }
 
+            @include desktop {
+                flex-grow: 0;
+            }
+        }
+        
         &--button {
             display        : flex;
             justify-content: center;
             align-items    : center;
             flex-grow      : 2.5;
             height         : rem(45);
+
+            @include desktop {
+                flex-grow: 11;
+            }
         }
     }
 }

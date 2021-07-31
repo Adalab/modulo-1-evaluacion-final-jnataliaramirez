@@ -27,6 +27,7 @@
         }
 
         @include desktop {
+            flex-grow: 25;
             font-size  : rem(16);
             line-height: 1.88;
         }
@@ -53,6 +54,7 @@
         }
 
         @include desktop {
+            flex-grow: 21;
             font-size: rem(32);
             line-height: 1.41;
         }
@@ -76,6 +78,7 @@
         }
 
         @include desktop {
+            flex-grow: 25;
             font-size: rem(20);
         }
     }
@@ -89,6 +92,10 @@
 
         @include tablet {
             flex-grow: 32;
+        }
+
+        @include desktop {
+            flex-grow: 29;
         }
 
         &--box {
