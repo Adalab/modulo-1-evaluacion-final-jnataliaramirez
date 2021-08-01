@@ -1,12 +1,12 @@
 .footer__section {
     background-color: $color-footer;
+    position: relative;
 }
 
 .footer {
     display         : flex;
     flex-direction  : column;
     justify-content : center;
-    position        : relative;
     height          : rem(465);
     background-color: $color-footer;
     font-family     : $font-text;
@@ -18,24 +18,15 @@
         padding-top   : rem(45);
     }
 
-    @include desktop {
-    }
-
     &__button {
-        position : absolute;
+        position:absolute;
         top      : rem(-22.5);
-        left     : 50%;
-        transform: translateX(-50%);
+        left: 50%;
+        transform: translate(-50%);
         animation-name: grow;
         animation-duration: 5s;
-        animation-iteration-count: 2;
         animation-direction: alternate;
         animation-timing-function: linear;
-        
-
-        @include desktop {
-            left     : 40%;
-        }
     }
 
     &__nav-sections {

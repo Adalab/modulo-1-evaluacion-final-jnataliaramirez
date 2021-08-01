@@ -8,6 +8,7 @@
     justify-content   : center;
     align-content     : center;
     height            : rem(624);
+    position: relative;
     background-color  : $color-background;
 
     @include tablet {
@@ -66,12 +67,14 @@
             height          : rem(45);
             border-radius   : rem(22.5);
             background-color: $color-orange;
+            transition      : border 1s linear, background-color 3s ease-in;
 
-            &:hover, &:active {
+            &:hover,
+            &:active {
                 border          : solid 2px $color-orange;
                 background-color: $color-white;
             }
-        
+
             @include tablet {
                 width: rem(210);
             }
@@ -88,20 +91,21 @@
             font-family    : $font-text;
             color          : $color-background;
             padding        : rem(10) rem(20);
-            
+
             &:hover {
-                color          : $color-orange;
+                color: $color-orange;
 
             }
-            
+
             @include tablet {
                 padding: rem(15) rem(30);
             }
-            
+
             @include desktop {
-                padding        : rem(15) rem(46);
+                padding: rem(15) rem(46);
             }
 
         }
     }
+
 }

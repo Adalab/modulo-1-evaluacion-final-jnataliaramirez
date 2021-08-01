@@ -4,16 +4,20 @@
         transform: scale(1);
     }
     15% {
-        transform: scale(1.5);
+        transform: scale(1.25);
     }
     25% {
-        transform: scale(2);
-    }
-    45% {
         transform: scale(1.5);
     }
+    45% {
+        transform: scale(2);
+    }
     75% {
+        transform: scale(1.5);
+    }
+    100% {
         transform: scale(1);
+        
     }
 }
 

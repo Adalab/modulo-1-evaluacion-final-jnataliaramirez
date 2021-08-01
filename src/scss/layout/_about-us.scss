@@ -112,6 +112,7 @@
             font-family    : $font-text;
             color          : $color-orange;
             border         : solid 2px $color-orange;
+            transition     : background-color 4s linear, border 4s linear;
 
             @include tablet {
                 width: rem(91);
