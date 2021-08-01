@@ -1,6 +1,6 @@
 .footer__section {
     background-color: $color-footer;
-    position: relative;
+    position        : relative;
 }
 
 .footer {
@@ -19,14 +19,14 @@
     }
 
     &__button {
-        position:absolute;
-        top      : rem(-22.5);
-        left: 50%;
-        transform: translate(-50%);
-        animation-name: grow;
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-timing-function: linear;
+        position                 : absolute;
+        top                      : rem(-22.5);
+        left                     : 50%;
+        transform                : translate(-50%);
+        animation-name           : grow;
+        animation-duration       : 5s;
+        animation-direction      : alternate;
+        animation-timing-function: ease;
     }
 
     &__nav-sections {

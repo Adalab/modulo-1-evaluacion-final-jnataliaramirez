@@ -9,14 +9,14 @@
 
 .page-wrapper-desktop {
   @include desktop {
-    margin: 0 auto;
+    margin   : 0 auto;
     max-width: rem(730);
   }
 }
 
 .page-wrapper-footer {
   @include desktop {
-    margin: 0 auto;
+    margin   : 0 auto;
     max-width: rem(540);
 
   }
